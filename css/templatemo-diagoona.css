@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 300;
     overflow-x: hidden;
     color: #ffffff;
@@ -14,7 +14,7 @@ a {
 ul { padding: 0; }
 a:hover { text-decoration: none; }
 button:focus { outline: none; }
-p { line-height: 1.9; }
+p { line-height: 1.8; font-size: 1.1rem; }
 .tm-logo { margin-right: 20px; }
 .tm-slogan { font-size: 0.8rem; }
 
@@ -78,8 +78,11 @@ p { line-height: 1.9; }
 }
 
 .tm-bg-controls-wrapper {
-    display: inline-block;
-    margin-left: -150px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 130px;
 }
 
 .tm-bg-control {
@@ -104,6 +107,9 @@ p { line-height: 1.9; }
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
+    padding: 40px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .tm-row { display: flex; }
@@ -118,8 +124,8 @@ p { line-height: 1.9; }
 .tm-col-right {
     width: 50%;
     height: 100%;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 130px;
+    padding-right: 40px;
 }
 
 .tm-content {

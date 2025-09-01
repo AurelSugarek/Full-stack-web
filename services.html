@@ -10,6 +10,48 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+    <style>
+        .tic-tac-toe {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .tic-tac-toe button {
+            width: 100px;
+            height: 100px;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .tic-tac-toe button:hover {
+            background-color: #e0e0e0;
+        }
+        #gameStatus, #winCounter {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        #playAgain {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #120a8f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #playAgain:hover {
+            background-color: #0e0875;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,9 +86,6 @@
                                     <a class="nav-link tm-nav-link" href="services.html">Projects <span class="sr-only">(current)</span></a>
                                 </li>   
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="investicie.html">Investments</a>
-                                </li>                                                                                          
-                                <li class="nav-item">
                                     <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
                                 </li>
                             </ul>                            
@@ -59,46 +98,41 @@
                 <div class="tm-col-left"></div>
                 <main class="tm-col-right">
                     <section class="tm-content">
-
-                        <!-- Project 1 -->
-                        <div class="media my-3 mb-5 tm-service-media tm-service-media-img-l">
-                            <img src="img/Nasdaq" alt="Investing in Nasdaq" class="tm-service-img">
-                            <div class="media-body tm-service-text">
-                                <h2 class="mb-4 tm-content-title">Investing in Stocks, Indices, and Portfolios</h2>
-                                <p>
-                                    I'm actively investing through the eToro platform, combining long-term strategies with positions in stocks like NVIDIA, indices such as Nasdaq and the S&P 500, and building my own custom portfolios.
-                                    Based on the analysis I've done (often with support from ChatGPT), I’ve achieved returns ranging between 50–100% in certain periods. 
-                                    I track market trends, earnings reports, and adjust my portfolio based on technical and fundamental signals. 
-                                    It's not just a hobby—it's a way to grow financially and deepen my understanding of economics.
-                                </p>
-                            </div> 
+                        <h2 class="mb-5 tm-content-title">My Projects</h2>
+                        <div class="media my-3">
+                          <i class="fas fa-server fa-3x p-3 mr-4"></i>
+                          <div class="media-body">
+                            <p>Here are some of the projects I've worked on. Each project showcases my skills in different areas, from back-end development to front-end design and cybersecurity.</p>
+                          </div>
                         </div>
 
-                        <!-- Project 2 -->
-                        <div class="media my-3 mb-5 tm-service-media">                            
-                            <div class="media-body tm-service-text">
-                                <h2 class="mb-4 tm-content-title">AI, CTF, and the World of Tech</h2>
-                                <p>
-                                    Alongside investing, I'm also exploring AI projects and programming. 
-                                    I solve CTF challenges, test web application security, and experiment with modern technologies.
-                                    I'm learning React, Laravel, SQL, and love playing around with AI tools—blending creativity with technical skills.
-                                </p>
-                            </div> 
-                            <img src="img/20250427_1710_Nemecký ovčiak vo Ferrari_simple_compose_01jsvwnyrzf62txcn975pmfd39.png" alt="AI and CTF" class="tm-service-img-r">
+                        <div class="row tm-project-row">
+                          <div class="col-md-6 col-sm-12 tm-project-col">
+                            <div class="tm-project-item">
+                              <h3 class="tm-project-title">Tic Tac Toe Game</h3>
+                              <p class="tm-project-description">A simple Tic Tac Toe game implemented using HTML, CSS, and JavaScript. This project demonstrates my ability to create interactive web applications with a focus on user experience and responsive design.</p>
+                              <a href="#" class="tm-project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                          </div>
                         </div>
 
-                        <!-- Project 3 -->
-                        <div class="media my-3 tm-service-media tm-service-media-img-l">
-                            <img src="img/Screenshot 2025-03-12 at 00-19-55 ChatGPT - image generator pro.png" alt="Secret Project" class="tm-service-img">
-                            <div class="media-body tm-service-text">
-                                <h2 class="mb-4 tm-content-title">Secret Project</h2>
-                                <p>
-                                    This is something I’ve been working on quietly behind the scenes. 
-                                    It combines my passion for technology, a sense of adventure, and a touch of my personal world. 
-                                    I can't reveal too much just yet—but stay tuned, there’s more to come soon!
-                                </p>
-                            </div> 
-                        </div> 
+                        <div class="tm-container">
+                            <h2 class="tm-content-title">Tic Tac Toe Game</h2>
+                            <div class="tic-tac-toe" id="ticTacToeBoard">
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                            </div>
+                            <p id="gameStatus"></p>
+                            <p id="winCounter">X Wins: 0 | O Wins: 0</p>
+                            <button id="playAgain">Play Again</button>
+                        </div>
 
                     </section>
                 </main>
@@ -134,5 +168,173 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/templatemo-script.js"></script>
+    <script>
+        // JavaScript for Tic Tac Toe
+        const board = document.getElementById('ticTacToeBoard');
+        const statusDisplay = document.getElementById('gameStatus');
+        const winCounterDisplay = document.getElementById('winCounter');
+        const playAgainButton = document.getElementById('playAgain');
+        let currentPlayer = 'X';
+        let gameActive = true;
+        const gameState = ['', '', '', '', '', '', '', '', ''];
+        let xWins = 0;
+        let oWins = 0;
+
+        const winningConditions = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6]
+        ];
+
+        function handleCellPlayed(clickedCell, clickedCellIndex) {
+            gameState[clickedCellIndex] = currentPlayer;
+            clickedCell.innerHTML = currentPlayer;
+        }
+
+        function handlePlayerChange() {
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        }
+
+        function handleResultValidation() {
+            let roundWon = false;
+            for (let i = 0; i < winningConditions.length; i++) {
+                const winCondition = winningConditions[i];
+                let a = gameState[winCondition[0]];
+                let b = gameState[winCondition[1]];
+                let c = gameState[winCondition[2]];
+                if (a === '' || b === '' || c === '') {
+                    continue;
+                }
+                if (a === b && b === c) {
+                    roundWon = true;
+                    break;
+                }
+            }
+
+            if (roundWon) {
+                statusDisplay.innerHTML = `Player ${currentPlayer} has won!`;
+                gameActive = false;
+                updateWinCounter();
+                return;
+            }
+
+            let roundDraw = !gameState.includes('');
+            if (roundDraw) {
+                statusDisplay.innerHTML = 'Game ended in a draw!';
+                gameActive = false;
+                return;
+            }
+
+            handlePlayerChange();
+        }
+
+        function handleCellClick(clickedCellEvent) {
+            const clickedCell = clickedCellEvent.target;
+            const clickedCellIndex = Array.from(board.children).indexOf(clickedCell);
+
+            if (gameState[clickedCellIndex] !== '' || !gameActive) {
+                return;
+            }
+
+            handleCellPlayed(clickedCell, clickedCellIndex);
+            handleResultValidation();
+
+            if (gameActive && currentPlayer === 'O') {
+                handleComputerMove();
+            }
+        }
+
+        function handleComputerMove() {
+            const bestMove = getBestMove();
+            const computerCell = board.children[bestMove];
+
+            handleCellPlayed(computerCell, bestMove);
+            handleResultValidation();
+        }
+
+        function getBestMove() {
+            let bestScore = -Infinity;
+            let move;
+            for (let i = 0; i < gameState.length; i++) {
+                if (gameState[i] === '') {
+                    gameState[i] = 'O';
+                    let score = minimax(gameState, 0, false);
+                    gameState[i] = '';
+                    if (score > bestScore) {
+                        bestScore = score;
+                        move = i;
+                    }
+                }
+            }
+            return move;
+        }
+
+        function minimax(newGameState, depth, isMaximizing) {
+            let scores = { X: -1, O: 1, tie: 0 };
+            let result = checkWinner();
+            if (result !== null) {
+                return scores[result];
+            }
+
+            if (isMaximizing) {
+                let bestScore = -Infinity;
+                for (let i = 0; i < newGameState.length; i++) {
+                    if (newGameState[i] === '') {
+                        newGameState[i] = 'O';
+                        let score = minimax(newGameState, depth + 1, false);
+                        newGameState[i] = '';
+                        bestScore = Math.max(score, bestScore);
+                    }
+                }
+                return bestScore;
+            } else {
+                let bestScore = Infinity;
+                for (let i = 0; i < newGameState.length; i++) {
+                    if (newGameState[i] === '') {
+                        newGameState[i] = 'X';
+                        let score = minimax(newGameState, depth + 1, true);
+                        newGameState[i] = '';
+                        bestScore = Math.min(score, bestScore);
+                    }
+                }
+                return bestScore;
+            }
+        }
+
+        function checkWinner() {
+            for (let i = 0; i < winningConditions.length; i++) {
+                const [a, b, c] = winningConditions[i];
+                if (gameState[a] && gameState[a] === gameState[b] && gameState[a] === gameState[c]) {
+                    return gameState[a];
+                }
+            }
+            return gameState.includes('') ? null : 'tie';
+        }
+
+        function updateWinCounter() {
+            if (currentPlayer === 'X') {
+                xWins++;
+            } else {
+                oWins++;
+            }
+            winCounterDisplay.innerHTML = `X Wins: ${xWins} | O Wins: ${oWins}`;
+        }
+
+        function handleRestartGame() {
+            gameActive = true;
+            currentPlayer = 'X';
+            gameState.fill('');
+            statusDisplay.innerHTML = '';
+            Array.from(board.children).forEach(cell => cell.innerHTML = '');
+        }
+
+        board.addEventListener('click', handleCellClick);
+        playAgainButton.addEventListener('click', handleRestartGame);
+    </script>
 </body>
 </html>
