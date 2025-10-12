@@ -70,10 +70,10 @@ p { line-height: 1.8; font-size: 1.1rem; }
     height: 100%;
 }
 
-.tm-bg-right { background-color: rgba(0,0,0,0.5); }
+.tm-bg-right { background-color: rgba(0, 0, 0, 0.5); }
 
 .tm-bg-left {
-    border-right: 230px solid rgba(0,0,0,0.5);
+    border-right: 230px solid rgba(0, 0, 0, 0.5);
     border-top: 100vh solid transparent;
 }
 

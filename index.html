@@ -4,130 +4,479 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="fontawesome/css/all.min.css" rel="stylesheet" />
-  <link href="css/templatemo-diagoona.css" rel="stylesheet" />
-  <link rel="icon" type="img/FAV.jpg" href="img/FAV.jpg">
-  <style>
-    body {
-      font-family: 'Open Sans', Arial, sans-serif;
-      font-size: 17px;
-      font-weight: 300;
-      overflow-x: hidden;
-      color: #ffffff;
-      background-color: #000000;
-    }
-    a { transition: all 0.3s ease; text-decoration: none; color:#ffffff; }
-    a:hover { text-decoration: none; color:#120a8f; }
-    .navbar-toggler { background-color: #120a8f; color:white; }
-    .navbar-expand-lg .navbar-nav .tm-nav-link { color:white; }
-    .nav-item.active .tm-nav-link, .nav-item:hover .tm-nav-link { color:#120a8f; }
-    .btn-primary {
-      background-color:#120a8f;
-      color:white;
-      border:none;
-    }
-    .btn-primary:hover {
-      background-color:#0d0675;
-      color:white;
-    }
-    hr { border-top: 1px solid #ffffff; }
-    .tm-content-title { color:white; }
-    .tm-sitename { color:white; }
-    .tm-slogon { color:white; }
-    .tm-bg-left { border-right: 230px solid rgba(0,0,0,0.5); border-top: 100vh solid transparent; }
-    .tm-bg-right { background-color: rgba(0,0,0,0,5); }
-    .tm-bg-control { background-color: rgba(0,0,0,0.5); }
-    .tm-bg-control.active, .tm-bg-control:hover { background-color:#120a8f; }
-    footer p, footer a { color:white; }
-    footer a:hover { color:#120a8f; }
-  </style>
+  <title>Full Stack Developer Portfolio</title>
+  <link rel="icon" type="image/jpeg" href="img/FAV.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 </head>
-<body>
-  <div class="tm-container">
-    <div>
-      <div class="tm-row pt-4">
-        <div class="tm-col-left">
-          <div class="tm-site-header media">
-            <i class="fas fa-code fa-3x mt-1 tm-logo"></i>
-            <div class="media-body">
-              <h1 class="tm-sitename text-uppercase">Welcome to My Digital Space</h1>
+<body class="app-theme">
+  <div class="app-shell">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home"><span>Portfolio</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="app-main">
+      <section id="home" class="section-padding hero-panel">
+        <div class="hero-effects">
+          <span class="hero-gradient"></span>
+          <span class="hero-particles"></span>
+        </div>
+        
+        <div class="container hero-shell">
+          <div class="row g-5 hero-grid align-items-center">
+            <div class="col-lg-6">
+              <div class="hero-copy animate-fade">
+                <div class="hero-badge animate-fade animate-delay-1">Hi, I'm Aurel Šugarek</div>
+                <h1 class="hero-title animate-fade animate-delay-2">Junior Full-Stack Developer in progress</h1>
+                <p class="hero-tagline animate-fade animate-delay-3">Web enthusiast with a security mindset, learning fast and building impactful experiences through hands-on projects and CTF challenges.</p>
+                <div class="hero-intro animate-fade animate-delay-4">
+                  <div class="hero-summary">
+                    <div class="summary-card">
+                      <div class="summary-icon"><i class="fas fa-seedling"></i></div>
+                      <div>
+                        <h4>Engineering the future</h4>
+                        <p>Transforming ideas into production-grade applications across fintech, analytics, and realtime collaboration.</p>
+                      </div>
+                    </div>
+                    <div class="summary-card">
+                      <div class="summary-icon"><i class="fas fa-shield-alt"></i></div>
+                      <div>
+                        <h4>Security infused delivery</h4>
+                        <p>CTF discipline, OWASP practices, and cloud-native tooling shape every build and deployment.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cta-group animate-fade animate-delay-5">
+                  <a href="#projects" class="btn btn-primary">View Projects</a>
+                  <a href="#contact" class="btn btn-soft">Contact Me</a>
+                </div>
+                <p class="hero-goal animate-fade animate-delay-5">Actively seeking a junior/trainee opportunity or mentorship to level up in production environments.</p>
+                <div class="social-links mt-4 animate-fade animate-delay-5">
+                  <a href="https://github.com/AurelSugarek" target="_blank" rel="noopener" data-bs-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/aurel%C5%A1ugarek/" target="_blank" rel="noopener" data-bs-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-visual-card animate-fade animate-delay-3">
+                <div class="metric-ticker">
+                  <span><i class="fas fa-shield-alt"></i> Secure-first builds</span>
+                  <span><i class="fas fa-bolt"></i> Rapid delivery cadence</span>
+                  <span><i class="fas fa-chart-line"></i> Data-led insights</span>
+                </div>
+                <div class="metric-cluster">
+                  <div class="stat-card animate-fade animate-delay-3">
+                    <span class="stat-label">Release velocity</span>
+                    <span class="stat-value">+38%</span>
+                    <span class="trend-positive"><i class="fas fa-rocket"></i>Optimised CI/CD</span>
+                  </div>
+                  <div class="stat-card animate-fade animate-delay-4">
+                    <span class="stat-label">Security posture</span>
+                    <span class="stat-value">A+</span>
+                    <span class="trend-positive"><i class="fas fa-shield-check"></i>Zero critical vulns</span>
+                  </div>
+                  <div class="stat-card animate-fade animate-delay-5">
+                    <span class="stat-label">UX uplift</span>
+                    <span class="stat-value">+24%</span>
+                    <span class="trend-positive"><i class="fas fa-heart"></i>Validated with users</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="tm-col-right">
-          <nav class="navbar navbar-expand-lg" id="tm-main-nav">
-            <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
-              data-toggle="collapse" data-target="#navbar-nav" 
-              aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
-              <ul class="navbar-nav text-uppercase">
-                <li class="nav-item active">
-                  <a class="nav-link tm-nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="about.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="services.html">Projects</a>
-                </li>  
-                <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>                            
+      </section>
+
+      <section id="about" class="section-padding">
+        <div class="container">
+          <div class="section-heading animate-fade">
+            <div class="glow-subtitle">About</div>
+            <h2 class="animate-fade animate-delay-1">Learning journey toward secure, resilient products</h2>
+            <p class="animate-fade animate-delay-2">I pair full-stack fundamentals with cybersecurity practice—rapidly iterating through courses, CTFs, and personal builds to grow into a well-rounded engineer.</p>
+            <div class="badge-strip animate-fade animate-delay-3">
+              <span><i class="fas fa-graduation-cap"></i> Self-taught & course-driven</span>
+              <span><i class="fas fa-flag-checkered"></i> CTF mindset</span>
+              <span><i class="fas fa-heartbeat"></i> Wellness-balanced</span>
             </div>
-          </nav>
+            <div class="about-highlight-grid animate-fade animate-delay-4">
+              <div class="about-highlight-card">
+                <span>Current focus</span>
+                <strong>React patterns & state management</strong>
+              </div>
+              <div class="about-highlight-card">
+                <span>Security labs</span>
+                <strong>OWASP & picoCTF practice</strong>
+              </div>
+              <div class="about-highlight-card">
+                <span>Shipping builds</span>
+                <strong>Fake E-shop · StockVision AI</strong>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+              <div class="glass-card about-overview animate-fade animate-delay-2">
+                <h3>About Me</h3>
+                <div class="about-list">
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-user-shield"></i></div>
+                    <div>
+                      <h4>Cybersecurity practice</h4>
+                      <p>Weekly picoCTF and HackTheBox labs strengthen my understanding of secure coding, threat modeling, and vulnerability triage.</p>
+                    </div>
+                  </div>
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div>
+                      <h4>Courses &amp; self-study</h4>
+                      <p>Following Udemy, FreeCodeCamp, and community-driven curricula to master React, Node.js, and TypeScript fundamentals.</p>
+                    </div>
+                  </div>
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div>
+                      <h4>Project-based learning</h4>
+                      <p>Building Fake E-shop and StockVision AI to explore state management, API design, deployments, and Streamlit apps.</p>
+                    </div>
+                  </div>
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-chart-line"></i></div>
+                    <div>
+                      <h4>Analytics &amp; reporting</h4>
+                      <p>Experimenting with dashboards and data storytelling—leveraging TradingView alerts, Alpha Vantage, and custom visualizations.</p>
+                    </div>
+                  </div>
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-dumbbell"></i></div>
+                    <div>
+                      <h4>Balance &amp; mindset</h4>
+                      <p>Fitness and journaling keep learning sustainable, helping me iterate quickly without burning out.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="glass-card focus-card animate-fade animate-delay-3">
+                <h3>🧠 Learning Journey</h3>
+                <ul class="focus-list">
+                  <li>
+                    <span class="focus-icon">📚</span>
+                    <div>
+                      <span class="focus-label">Course stack</span>
+                      <span class="focus-meta">Harvard CS50 · self-directed full-stack study · capture-the-flag research</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="focus-icon">🛡️</span>
+                    <div>
+                      <span class="focus-label">Security drills</span>
+                      <span class="focus-meta">Daily CTF challenges · vulnerability labs · attack surface mapping</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="focus-icon">🧪</span>
+                    <div>
+                      <span class="focus-label">Experimentation</span>
+                      <span class="focus-meta">Fake E-shop MERN refactors · StockVision AI data workflows</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="focus-icon">🤝</span>
+                    <div>
+                      <span class="focus-label">Community</span>
+                      <span class="focus-meta">Open-source contributions in progress · local meetups · Discord study groups</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="focus-icon">✍️</span>
+                    <div>
+                      <span class="focus-label">Writing &amp; reflection</span>
+                      <span class="focus-meta">Capturing takeaways from CS50 and project retros</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div class="glow-subtitle">⚙️ Technical Stack</div>
+            <h2>Tuned for performance and clarity</h2>
+            <p>Each capability is benchmarked against real-world delivery, ensuring every sprint drives measurable, high-trust outcomes.</p>
+          </div>
+          <div class="tech-stack-grid">
+            <article class="stack-card">
+              <span class="stack-badge">🖥️ Frontend Engineering</span>
+              <ul class="stack-list">
+                <li><span class="stack-skill">Currently building with React &amp; Vite</span><span class="stack-status">Learning advanced hooks &amp; routing</span></li>
+                <li><span class="stack-skill">Styling systems</span><span class="stack-status">Tailwind CSS · component-driven UI</span></li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <span class="stack-badge">⚡ Backend &amp; DevOps</span>
+              <ul class="stack-list">
+                <li><span class="stack-skill">Node.js &amp; Express APIs</span><span class="stack-status">Focusing on auth, validation, testing</span></li>
+                <li><span class="stack-skill">Automation pipeline</span><span class="stack-status">Experimenting with GitHub Actions &amp; Docker</span></li>
+                <li><span class="stack-skill">Databases</span><span class="stack-status">MongoDB · PostgreSQL basics</span></li>
+              </ul>
+              <div class="stack-footnote">Goal: CI/CD-ready services for upcoming projects</div>
+            </article>
+            <article class="stack-card">
+              <span class="stack-badge">🤖 AI &amp; Data Intelligence</span>
+              <ul class="stack-list">
+                <li><span class="stack-skill">Streamlit dashboards</span><span class="stack-status">StockVision AI experiments</span></li>
+                <li><span class="stack-skill">Prompt engineering</span><span class="stack-status">Testing OpenAI &amp; LangChain workflows</span></li>
+                <li><span class="stack-skill">Trading data APIs</span><span class="stack-status">Alpha Vantage · TradingView alerts</span></li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <span class="stack-badge">💡 Product &amp; Experience</span>
+              <ul class="stack-list">
+                <li><span class="stack-skill">UX &amp; accessibility habits</span><span class="stack-status">Following WCAG checklists in projects</span></li>
+                <li><span class="stack-skill">Collaboration toolkit</span><span class="stack-status">Jira · Notion · Linear for planning practice</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div class="glow-subtitle">Projects</div>
+            <h2>Recent launches built for traders, operators, and makers</h2>
+            <p>A selection of multi-disciplinary builds blending insights, realtime data, and seamless collaboration.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-tile" data-link="https://fake-eshop-1.onrender.com/index.html">
+              <div class="project-meta">
+                <span>Fake E-shop Platform</span>
+                <span><i class="far fa-calendar"></i> 2025</span>
+              </div>
+              <p>A conversion-focused ecommerce experience with modular product flows, analytics overlays, and frictionless checkout built on the MERN stack.</p>
+              <p class="project-learning">Learning takeaways: React state refactors, Node.js API hardening, and deployment via Render.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="https://fake-eshop-1.onrender.com/index.html" target="_blank" rel="noopener">Fake E-shop Platform</a>
+              </div>
+            </article>
+            <article class="project-tile" data-link="https://stockvisionai.streamlit.app/">
+              <div class="project-meta">
+                <span>StockVision AI</span>
+                <span><i class="far fa-calendar"></i> 2025</span>
+              </div>
+              <p>An AI-augmented analytics studio delivering real-time trading insights, LLM-assisted research, and interactive dashboards for market teams.</p>
+              <p class="project-learning">Learning takeaways: Streamlit UI patterns, OpenAI prompt design, and third-party data integrations.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">OpenAI API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://stockvisionai.streamlit.app/" target="_blank" rel="noopener">StockVision AI</a>
+              </div>
+            </article>
+            <article class="project-tile" data-link="https://aurelsugarek.github.io/Full-stack-web/">
+              <div class="project-meta">
+                <span>Portfolio Evolution Lab</span>
+                <span><i class="far fa-calendar"></i> 2025</span>
+              </div>
+              <p>A responsive portfolio rebuild exploring hero animations, glassmorphism accents, and Formspree-powered outreach to showcase my learning journey.</p>
+              <p class="project-learning">Learning takeaways: Semantic HTML structure, layered CSS motion, and GitHub Pages deployment workflows.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://aurelsugarek.github.io/Full-stack-web/" target="_blank" rel="noopener">Portfolio Evolution Lab</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div class="glow-subtitle">Contact</div>
+            <h2>Let's align on outcomes and timelines</h2>
+            <p>Share your goals, desired metrics, or existing stack. I'm looking for mentorship, internships, or first freelance collaborations.</p>
+          </div>
+          <div class="contact-panel">
+            <div class="contact-card">
+              <div class="info-list">
+                <div class="info-row">
+                  <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                  <div class="info-content">
+                    <h4>Email</h4>
+                    <a href="mailto:sugarekaurel@gmail.com">sugarekaurel@gmail.com</a>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <div class="info-icon"><i class="fas fa-phone"></i></div>
+                  <div class="info-content">
+                    <h4>Phone</h4>
+                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-grid">
+                <div class="glass-card">
+                  <span class="media-badge"><i class="fas fa-podcast"></i> Consultation readiness</span>
+                  <p>From quick audits to roadmap delivery—let's scope the sprint or engagement that fits your team best.</p>
+                </div>
+                <div class="glass-card">
+                  <span class="media-badge"><i class="fas fa-people-group"></i> Collaboration</span>
+                  <p>Comfortable pairing with analysts, designers, SREs, and founders to keep feedback loops rapid and clear.</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-card">
+              <form id="contact-form" action="https://formspree.io/f/xovlnoyy" method="POST">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="sugarekaurel@gmail.com" required>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject">
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Share project goals, timelines, or metrics" required></textarea>
+                  </div>
+                </div>
+                <button type="submit" id="submit-button" class="btn btn-primary mt-4">Send Message</button>
+                <div id="response-message" class="mt-3"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Portfolio</div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/AurelSugarek" target="_blank" rel="noopener" data-bs-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aurel%C5%A1ugarek/" target="_blank" rel="noopener" data-bs-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="copyright">&copy; <span id="current-year"></span> Aurel Šugarek.</div>
         </div>
       </div>
-
-      <div class="tm-row">
-        <div class="tm-col-left"></div>
-        <main class="tm-col-right">
-          <section class="tm-content">
-            <h2 class="mb-5 tm-content-title">Hi,</h2>
-            <p class="mb-5">
-               I’m an aspiring Junior Fullstack Developer passionate about turning ideas into working applications. I’ve been building projects with modern web technologies and sharpening my problem-solving skills through CTF challenges and cybersecurity practice. This portfolio is where I share my progress and the projects I’m proud of as I grow into a fullstack engineer.nevi
-            </p>
-            <a href="about.html" class="btn btn-primary">Explore more about me</a>
-          </section>
-        </main>
-      </div>
-    </div>
-
-    <div class="tm-row">
-      <div class="tm-col-left text-center">
-        <ul class="tm-bg-controls-wrapper">
-          <li class="tm-bg-control active" data-id="0"></li>
-          <li class="tm-bg-control" data-id="1"></li>
-          <li class="tm-bg-control" data-id="2"></li>
-          <li class="tm-bg-control" data-id="3"></li>
-          <li class="tm-bg-control" data-id="4"></li>
-          <li class="tm-bg-control" data-id="5"></li>
-        </ul>
-      </div>
-      <div class="tm-col-right tm-col-footer">
-        <footer class="tm-site-footer text-right">
-          <p class="mb-0">
-            © 2025 My Projects | Web development, CTF learner, and technology explorer
-          </p>
-        </footer>
-      </div>
-    </div>
-
-    <!-- Diagonal background design -->
-    <div class="tm-bg">
-      <div class="tm-bg-left"></div>
-      <div class="tm-bg-right"></div>
-    </div>
+    </footer>
   </div>
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.backstretch.min.js"></script>
-  <script src="js/templatemo-script.js"></script>
+  <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var yearEl = document.getElementById('current-year');
+      if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+
+      var form = document.getElementById('contact-form');
+      if (!form) return;
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var submitButton = document.getElementById('submit-button');
+        var responseMessage = document.getElementById('response-message');
+        var formData = new FormData(form);
+
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.innerText = 'Sending...';
+        }
+        if (responseMessage) {
+          responseMessage.innerText = '';
+          responseMessage.style.color = '#9CA3AF';
+        }
+
+        fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+          if (!responseMessage) return;
+
+          if (response.ok) {
+            responseMessage.innerText = 'Thanks! Your message has been sent.';
+            responseMessage.style.color = '#34D399';
+            form.reset();
+          } else {
+            responseMessage.innerText = 'Oops! Something went wrong. Please try again.';
+            responseMessage.style.color = '#F87171';
+          }
+        }).catch(function() {
+          if (!responseMessage) return;
+          responseMessage.innerText = 'Error sending message. Please check your connection.';
+          responseMessage.style.color = '#F87171';
+        }).finally(function() {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.innerText = 'Send Message';
+          }
+        });
+      });
+
+      var projectTiles = document.querySelectorAll('.project-tile[data-link]');
+      projectTiles.forEach(function(tile) {
+        tile.style.cursor = 'pointer';
+
+        tile.addEventListener('click', function(event) {
+          var isAnchor = event.target.closest('a');
+          if (isAnchor) {
+            return;
+          }
+
+          var link = tile.getAttribute('data-link');
+          if (link) {
+            window.open(link, '_blank', 'noopener');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

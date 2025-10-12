@@ -1,143 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
-    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
-    <link rel="icon" type="img/FAV.jpg" href="img/FAV.jpg">
-  </head>
-
-<body>
-    <div class="tm-container">        
-        <div>
-            <div class="tm-row pt-4">
-                <div class="tm-col-left">
-                    <div class="tm-site-header media">
-                        <i class="fas fa-user fa-3x mt-1 tm-logo"></i>
-                        <div class="media-body">
-                            <h1 class="tm-sitename text-uppercase">About Me</h1>
-                            <p class="tm-slogon">CTF, Cyber World & Tech Challenges</p>
-                        </div>        
-                    </div>
-                </div>
-                <div class="tm-col-right">
-                    <nav class="navbar navbar-expand-lg" id="tm-main-nav">
-                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
-                            data-toggle="collapse" data-target="#navbar-nav" 
-                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span><i class="fas fa-bars"></i></span>
-                        </button>
-                        <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
-                            <ul class="navbar-nav text-uppercase">
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link tm-nav-link" href="about.html">About Me <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="services.html">Projects</a>
-                                </li>                 
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>                            
-                        </div>                        
-                    </nav>
-                </div>
-            </div>
-            
-            <div class="tm-row">
-                <div class="tm-col-left"></div>
-                <main class="tm-col-right">
-                    <section class="tm-content tm-about">
-                        <h2 class="mb-5 tm-content-title">About Me</h2>
-                        <hr class="mb-4">
-                        <div class="row">
-                          <div class="col-md-6 col-sm-12 mb-4">
-                            <div class="tm-about-card">
-                              <div class="tm-about-card-header">
-                                <i class="fas fa-shield-alt fa-3x"></i>
-                              </div>
-                              <div class="tm-about-card-body">
-                                <h3 class="tm-about-card-title">Cybersecurity & CTF</h3>
-                                <p class="tm-about-card-text">I'm actively solving Capture The Flag challenges, performing application security testing, and constantly learning new cybersecurity techniques.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-sm-12 mb-4">
-                            <div class="tm-about-card">
-                              <div class="tm-about-card-header">
-                                <i class="fas fa-laptop-code fa-3x"></i>
-                              </div>
-                              <div class="tm-about-card-body">
-                                <h3 class="tm-about-card-title">Web Development & Full‑Stack</h3>
-                                <p class="tm-about-card-text">I work on personal projects, explore technologies like React and Laravel, and build a growing portfolio of modern web solutions.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-sm-12 mb-4">
-                            <div class="tm-about-card">
-                              <div class="tm-about-card-header">
-                                <i class="fas fa-code fa-3x"></i>
-                              </div>
-                              <div class="tm-about-card-body">
-                                <h3 class="tm-about-card-title">Coding & Programming</h3>
-                                <p class="tm-about-card-text">I'm passionate about various programming languages. I enjoy writing logic, solving problems, and turning ideas into code.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-sm-12 mb-4">
-                            <div class="tm-about-card">
-                              <div class="tm-about-card-header">
-                                <i class="fas fa-dumbbell fa-3x"></i>
-                              </div>
-                              <div class="tm-about-card-body">
-                                <h3 class="tm-about-card-title">Fitness & Health</h3>
-                                <p class="tm-about-card-text">I believe in a healthy lifestyle, balancing my time in front of the screen with regular gym sessions and physical activity.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </section>
-                </main>
-            </div>
-        </div>        
-
-        <div class="tm-row">
-            <div class="tm-col-left text-center">            
-                <ul class="tm-bg-controls-wrapper">
-                    <li class="tm-bg-control active" data-id="0"></li>
-                    <li class="tm-bg-control" data-id="1"></li>
-                    <li class="tm-bg-control" data-id="2"></li>
-                    <li class="tm-bg-control" data-id="3"></li>
-                    <li class="tm-bg-control" data-id="4"></li>
-                    <li class="tm-bg-control" data-id="5"></li>
-                </ul>            
-            </div>        
-            <div class="tm-col-right tm-col-footer">
-                <footer class="tm-site-footer text-right">
-                    <p class="mb-0">© 2025 My Projects | IT challenges, CTF, code & fitness</p>
-                </footer>
-            </div>   
-        </div>        
-
-        <!-- Diagonal background design -->
-        <div class="tm-bg">
-            <div class="tm-bg-left"></div>
-            <div class="tm-bg-right"></div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About | Aurel Šugarek</title>
+  <link rel="icon" type="image/jpeg" href="img/FAV.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body class="app-theme">
+  <div class="app-shell">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html#home"><span>Portfolio</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
+    <main class="app-main">
+      <section id="about-overview" class="section-padding hero-panel">
+        <div class="container">
+          <div class="row g-5 hero-grid align-items-start">
+            <div class="col-lg-6">
+              <div class="hero-copy">
+                <div class="glow-subtitle">About</div>
+                <h1>Learning journey toward secure, resilient products</h1>
+                <div class="hero-intro">
+                  <p>I'm a self-taught junior developer mixing full-stack fundamentals with cybersecurity drills. Courses, CTFs, and personal builds help me move fast while staying intentional.</p>
+                  <div class="badge-strip">
+                    <span><i class="fas fa-graduation-cap"></i> Harvard CS50 & self-study</span>
+                    <span><i class="fas fa-flag-checkered"></i> Daily CTF mindset</span>
+                    <span><i class="fas fa-heartbeat"></i> Wellness-balanced</span>
+                  </div>
+                  <p>I learn by shipping: Fake E-shop and StockVision AI anchor my experiments in React, Node.js, Streamlit, and secure delivery practices.</p>
+                </div>
+                <div class="hero-highlights">
+                  <div class="highlight-card">
+                    <span class="highlight-title">Cybersecurity drills</span>
+                    <span class="highlight-body">Weekly picoCTF, HackTheBox, and OWASP Juice Shop labs harden my understanding of secure code.</span>
+                  </div>
+                  <div class="highlight-card">
+                    <span class="highlight-title">Full-stack building</span>
+                    <span class="highlight-body">React + Vite frontends, Node.js services, and MongoDB/PostgreSQL run my project experiments.</span>
+                  </div>
+                  <div class="highlight-card">
+                    <span class="highlight-title">Learning loops</span>
+                    <span class="highlight-body">Retros, journaling, and community notes keep progress measurable and consistent.</span>
+                  </div>
+                </div>
+                <div class="cta-group">
+                  <a href="services.html" class="btn btn-primary">View recent builds</a>
+                  <a href="contact.html" class="btn btn-soft">Discuss mentorship</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="glass-card about-overview">
+                <h3>About Me</h3>
+                <div class="about-list">
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-user-shield"></i></div>
+                    <div>
+                      <h4>Cybersecurity practice</h4>
+                      <p>Running daily CTF drills and vulnerability labs to sharpen secure coding, threat modeling, and exploit analysis.</p>
+                    </div>
+                  </div>
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div>
+                      <h4>Courses &amp; self-study</h4>
+                      <p>Studying through Harvard CS50 materials, self-paced full-stack curricula, and capture-the-flag research to deepen React, Node.js, and TypeScript.</p>
+                    </div>
+                  </div>
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-chart-line"></i></div>
+                    <div>
+                      <h4>Project-based learning</h4>
+                      <p>Fake E-shop teaches ecommerce flows and API hardening; StockVision AI explores Streamlit dashboards and external APIs.</p>
+                    </div>
+                  </div>
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-code"></i></div>
+                    <div>
+                      <h4>Coding &amp; logic</h4>
+                      <p>Daily coding challenges and refactors sharpen my reasoning, debugging, and testing habits.</p>
+                    </div>
+                  </div>
+                  <div class="about-item">
+                    <div class="about-item-icon"><i class="fas fa-dumbbell"></i></div>
+                    <div>
+                      <h4>Fitness &amp; balance</h4>
+                      <p>Strength training and journaling keep my learning sustainable and my focus sharp.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="focus" class="section-padding">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+              <div class="glass-card focus-card">
+                <h3>🧠 Learning Journey</h3>
+                <ul class="focus-list">
+                  <li>
+                    <span class="focus-icon">📚</span>
+                    <div>
+                      <span class="focus-label">Course stack</span>
+                      <span class="focus-meta">Harvard CS50 · self-directed full-stack study · capture-the-flag research</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="focus-icon">🛡️</span>
+                    <div>
+                      <span class="focus-label">Security drills</span>
+                      <span class="focus-meta">Daily CTF challenges · vulnerability labs · attack surface mapping</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="focus-icon">🧪</span>
+                    <div>
+                      <span class="focus-label">Experimentation</span>
+                      <span class="focus-meta">Fake E-shop MERN refactors · StockVision AI data workflows</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="focus-icon">🤝</span>
+                    <div>
+                      <span class="focus-label">Community</span>
+                      <span class="focus-meta">Open-source contributions in progress · local meetups · Discord study groups</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="focus-icon">✍️</span>
+                    <div>
+                      <span class="focus-label">Writing &amp; reflection</span>
+                      <span class="focus-meta">Documenting lessons on dev.to (coming soon)</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="glass-card focus-card">
+                <h3>What drives my work</h3>
+                <p>I want my first professional projects to blend security, clarity, and thoughtful UX. I iterate quickly, share progress transparently, and look for mentors who value sustainable pace and curiosity.</p>
+                <div class="mini-metrics mt-4">
+                  <div class="stat-card">
+                    <span class="stat-label">Collaboration style</span>
+                    <span class="stat-value">Curious &amp; proactive</span>
+                    <span class="trend-positive"><i class="fas fa-people-group"></i>Ready to learn from peers</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-label">Learning loop</span>
+                    <span class="stat-value">Weekly retros</span>
+                    <span class="trend-positive"><i class="fas fa-infinity"></i>Continuous iteration</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div class="glow-subtitle">⚙️ Technical Stack</div>
+            <h2>Tuned for performance and clarity</h2>
+            <p>Each capability is benchmarked against real-world delivery, ensuring every sprint drives measurable, high-trust outcomes.</p>
+          </div>
+          <div class="tech-stack-grid">
+            <article class="stack-card">
+              <span class="stack-badge">🖥️ Frontend Engineering</span>
+              <ul class="stack-list">
+                <li><span class="stack-skill">Currently building with React &amp; Vite</span><span class="stack-status">Learning advanced hooks &amp; routing</span></li>
+                <li><span class="stack-skill">Styling systems</span><span class="stack-status">Tailwind CSS · component-driven UI</span></li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <span class="stack-badge">⚡ Backend &amp; DevOps</span>
+              <ul class="stack-list">
+                <li><span class="stack-skill">Node.js &amp; Express APIs</span><span class="stack-status">Focusing on auth, validation, testing</span></li>
+                <li><span class="stack-skill">Automation pipeline</span><span class="stack-status">Experimenting with GitHub Actions &amp; Docker</span></li>
+                <li><span class="stack-skill">Databases</span><span class="stack-status">MongoDB · PostgreSQL basics</span></li>
+              </ul>
+              <div class="stack-footnote">Goal: CI/CD-ready services for upcoming projects</div>
+            </article>
+            <article class="stack-card">
+              <span class="stack-badge">🤖 AI &amp; Data Intelligence</span>
+              <ul class="stack-list">
+                <li><span class="stack-skill">Streamlit dashboards</span><span class="stack-status">StockVision AI experiments</span></li>
+                <li><span class="stack-skill">Prompt engineering</span><span class="stack-status">Testing OpenAI &amp; LangChain workflows</span></li>
+                <li><span class="stack-skill">Trading data APIs</span><span class="stack-status">Alpha Vantage · TradingView alerts</span></li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <span class="stack-badge">💡 Product &amp; Experience</span>
+              <ul class="stack-list">
+                <li><span class="stack-skill">UX &amp; accessibility habits</span><span class="stack-status">Following WCAG checklists in projects</span></li>
+                <li><span class="stack-skill">Collaboration toolkit</span><span class="stack-status">Jira · Notion · Linear for planning practice</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="playground" class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div class="glow-subtitle">Interactive Lab</div>
+            <h2>Tic Tac Toe engines for rapid strategy testing</h2>
+            <p>Exploring game theory and algorithmic thinking keeps my reflexes sharp. Challenge the AI and see how it responds.</p>
+          </div>
+          <div class="game-wrapper">
+            <div class="glass-card">
+              <h3 class="mb-3">3x3 Tic Tac Toe</h3>
+              <p class="text-muted">Beat the unbeatable. Minimax logic tracks every move.</p>
+              <div id="winCounter">X Wins: 0 | O Wins: 0</div>
+              <div id="gameStatus" class="mt-2"></div>
+              <div id="ticTacToeBoard" class="tic-tac-toe mt-3">
+                <button type="button" aria-label="cell 1"></button>
+                <button type="button" aria-label="cell 2"></button>
+                <button type="button" aria-label="cell 3"></button>
+                <button type="button" aria-label="cell 4"></button>
+                <button type="button" aria-label="cell 5"></button>
+                <button type="button" aria-label="cell 6"></button>
+                <button type="button" aria-label="cell 7"></button>
+                <button type="button" aria-label="cell 8"></button>
+                <button type="button" aria-label="cell 9"></button>
+              </div>
+              <button id="playAgain" class="btn btn-primary mt-3">Play Again</button>
+            </div>
+
+            <div class="glass-card">
+              <h3 class="mb-3">6x6 Tic Tac Toe</h3>
+              <p class="text-muted">A heuristic engine balances offense and defense across a bigger grid.</p>
+              <div id="gameStatus6x6">Current Turn: X</div>
+              <div id="ticTacToeBoard6x6" class="tic-tac-toe-6x6 mt-3">
+                <button type="button" aria-label="cell 1"></button>
+                <button type="button" aria-label="cell 2"></button>
+                <button type="button" aria-label="cell 3"></button>
+                <button type="button" aria-label="cell 4"></button>
+                <button type="button" aria-label="cell 5"></button>
+                <button type="button" aria-label="cell 6"></button>
+                <button type="button" aria-label="cell 7"></button>
+                <button type="button" aria-label="cell 8"></button>
+                <button type="button" aria-label="cell 9"></button>
+                <button type="button" aria-label="cell 10"></button>
+                <button type="button" aria-label="cell 11"></button>
+                <button type="button" aria-label="cell 12"></button>
+                <button type="button" aria-label="cell 13"></button>
+                <button type="button" aria-label="cell 14"></button>
+                <button type="button" aria-label="cell 15"></button>
+                <button type="button" aria-label="cell 16"></button>
+                <button type="button" aria-label="cell 17"></button>
+                <button type="button" aria-label="cell 18"></button>
+                <button type="button" aria-label="cell 19"></button>
+                <button type="button" aria-label="cell 20"></button>
+                <button type="button" aria-label="cell 21"></button>
+                <button type="button" aria-label="cell 22"></button>
+                <button type="button" aria-label="cell 23"></button>
+                <button type="button" aria-label="cell 24"></button>
+                <button type="button" aria-label="cell 25"></button>
+                <button type="button" aria-label="cell 26"></button>
+                <button type="button" aria-label="cell 27"></button>
+                <button type="button" aria-label="cell 28"></button>
+                <button type="button" aria-label="cell 29"></button>
+                <button type="button" aria-label="cell 30"></button>
+                <button type="button" aria-label="cell 31"></button>
+                <button type="button" aria-label="cell 32"></button>
+                <button type="button" aria-label="cell 33"></button>
+                <button type="button" aria-label="cell 34"></button>
+                <button type="button" aria-label="cell 35"></button>
+                <button type="button" aria-label="cell 36"></button>
+              </div>
+              <button id="playAgain6x6" class="btn btn-primary mt-3">Play Again</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Portfolio</div>
+          <p class="footer-text">Designing beautiful, secure, and human experiences across the stack.</p>
+          <div class="footer-links">
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="services.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="social-links">
+            <a href="#" data-bs-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" data-bs-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" data-bs-toggle="tooltip" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" data-bs-toggle="tooltip" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" data-bs-toggle="tooltip" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+          </div>
+          <div class="copyright">&copy; <span id="current-year"></span> Your Name. All Rights Reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <a href="#about-overview" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tic-tac-toe.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var yearEl = document.getElementById('current-year');
+      if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+    });
+  </script>
 </body>
 </html>

@@ -1,482 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Projects</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
-    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
-    <link rel="icon" type="img/FAV.jpg" href="img/FAV.jpg">
-    <style>
-        .tic-tac-toe, .tic-tac-toe-6x6 {
-            display: grid;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .tic-tac-toe {
-            grid-template-columns: repeat(3, 60px);
-            grid-gap: 5px;
-        }
-        .tic-tac-toe-6x6 {
-            grid-template-columns: repeat(6, 60px);
-            grid-gap: 5px;
-        }
-        .tic-tac-toe button, .tic-tac-toe-6x6 button {
-            width: 60px;
-            height: 60px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #fff;
-            border: 1px solid #000;
-            border-radius: 3px;
-        }
-        #gameStatus, #gameStatus6x6, #winCounter, #winCounter6x6 {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 1rem;
-        }
-        #playAgain, #playAgain6x6 {
-            display: block;
-            margin: 10px auto;
-            padding: 5px 10px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 3px;
-        }
-        #playAgain:hover, #playAgain6x6:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projects | Aurel Šugarek</title>
+  <link rel="icon" type="image/jpeg" href="img/FAV.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 </head>
-<body>
-    <div class="tm-container">        
-        <div>
-            <div class="tm-row pt-4">
-                <div class="tm-col-left">
-                    <div class="tm-site-header media">
-                        <i class="fas fa-project-diagram fa-3x mt-1 tm-logo"></i>
-                        <div class="media-body">
-                            <h1 class="tm-sitename text-uppercase">Projects</h1>
-                            <p class="tm-slogon">Tic Tac Toe</p>
-                        </div>        
-                    </div>
-                </div>
-                <div class="tm-col-right">
-                    <nav class="navbar navbar-expand-lg" id="tm-main-nav">
-                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
-                            data-toggle="collapse" data-target="#navbar-nav" 
-                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span><i class="fas fa-bars"></i></span>
-                        </button>
-                        <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
-                            <ul class="navbar-nav text-uppercase">
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="about.html">About Me</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link tm-nav-link" href="services.html">Projects <span class="sr-only">(current)</span></a>
-                                </li>   
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>                            
-                        </div>                        
-                    </nav>
-                </div>
-            </div>
-            
-            <div class="tm-row">
-                <div class="tm-col-left"></div>
-                <main class="tm-col-right">
-                    <section class="tm-content">
-                        <h2 class="mb-5 tm-content-title">My Projects</h2>
-                        <div class="media my-3">
-                          <div class="row tm-project-row">
-                            <div class="tm-project-col">
-                              <div class="tm-project-item">
-                                <h3 class="tm-project-title">Tic Tac Toe Game</h3>
-                                <p>A simple Tic Tac Toe game implemented using HTML, CSS, and JavaScript. This project demonstrates my ability to create interactive web applications with a focus on user experience and responsive design.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="media-body">
-                          </div>
-                        </div>
-
-                        <div class="tm-container">
-                            <h2 class="tm-content-title">Tic Tac Toe Game</h2>
-                            <div class="tic-tac-toe" id="ticTacToeBoard">
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                            </div>
-                            <p id="gameStatus"></p>
-                            <p id="winCounter">X Wins: 0 | O Wins: 0</p>
-                            <button id="playAgain">Play Again</button>
-                        </div>
-
-                        <div class="tm-container">
-                            <h2 class="tm-content-title">Tic Tac Toe 6x6 Game</h2>
-                            <div class="tic-tac-toe-6x6" id="ticTacToeBoard6x6">
-                                <!-- 6x6 grid buttons -->
-                                <script>
-                                    for (let i = 0; i < 36; i++) {
-                                        document.write('<button></button>');
-                                    }
-                                </script>
-                            </div>
-                            <p id="gameStatus6x6">Current Turn: X</p>
-                            <button id="playAgain6x6">Play Again</button>
-                        </div>
-
-                    </section>
-                </main>
-            </div>
-        </div>        
-
-        <div class="tm-row">
-            <div class="tm-col-left text-center">            
-                <ul class="tm-bg-controls-wrapper">
-                    <li class="tm-bg-control active" data-id="0"></li>
-                    <li class="tm-bg-control" data-id="1"></li>
-                    <li class="tm-bg-control" data-id="2"></li>
-                    <li class="tm-bg-control" data-id="3"></li>
-                    <li class="tm-bg-control" data-id="4"></li>
-                    <li class="tm-bg-control" data-id="5"></li>
-                </ul>            
-            </div>        
-            <div class="tm-col-right tm-col-footer">
-                <footer class="tm-site-footer text-right">
-                    <p class="mb-0">© 2025 My Projects | investing • tech • exploration</p>
-                </footer>
-            </div>  
-        </div>        
-
-        <!-- Diagonal background design -->
-        <div class="tm-bg">
-            <div class="tm-bg-left"></div>
-            <div class="tm-bg-right"></div>
+<body class="app-theme">
+  <div class="app-shell">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html#home"><span>Portfolio</span> Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
-    <script>
-        // JavaScript for 3x3 Tic Tac Toe
-        const board = document.getElementById('ticTacToeBoard');
-        const statusDisplay = document.getElementById('gameStatus');
-        const winCounterDisplay = document.getElementById('winCounter');
-        const playAgainButton = document.getElementById('playAgain');
-        let currentPlayer = 'X';
-        let gameActive = true;
-        const gameState = ['', '', '', '', '', '', '', '', ''];
-        let xWins = 0;
-        let oWins = 0;
+    <main class="app-main">
+      <section class="section-padding hero-panel">
+        <div class="container">
+          <div class="row g-5 hero-grid align-items-center">
+            <div class="col-lg-6">
+              <div class="hero-copy">
+                <div class="glow-subtitle">Projects</div>
+                <h1>Solutions for trading floors, growth teams, and makers</h1>
+                <h2>I build performant interfaces, resilient APIs, and automation pipelines that empower teams to iterate faster.</h2>
+                <p>Each project below blends design systems, secure architecture, and measurable business outcomes. Explore dashboards, real-time collaboration tools, and interactive experiments.</p>
+                <div class="cta-group">
+                  <a href="contact.html" class="btn btn-primary">Request a case study</a>
+                  <a href="index.html#projects" class="btn btn-soft">View highlights</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-visual glass-card">
+                <div class="chart-frame">
+                  <div class="project-meta">
+                    <span>Delivery Dashboard</span>
+                    <span><i class="far fa-clock"></i> Updated 5m ago</span>
+                  </div>
+                  <div class="mini-metrics">
+                    <div class="stat-card">
+                      <span class="stat-label">Deploy cadence</span>
+                      <span class="stat-value">Daily</span>
+                      <span class="trend-positive"><i class="fas fa-rocket"></i>Automated QA</span>
+                    </div>
+                    <div class="stat-card">
+                      <span class="stat-label">Defect rate</span>
+                      <span class="stat-value">&lt;0.4%</span>
+                      <span class="trend-positive"><i class="fas fa-microscope"></i>Observability</span>
+                    </div>
+                    <div class="stat-card">
+                      <span class="stat-label">Design debt</span>
+                      <span class="stat-value">-22%</span>
+                      <span class="trend-positive"><i class="fas fa-layer-group"></i>Tokens synced</span>
+                    </div>
+                    <div class="stat-card">
+                      <span class="stat-label">SLO uptime</span>
+                      <span class="stat-value">99.95%</span>
+                      <span class="trend-positive"><i class="fas fa-signal"></i>Multi-region</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        const winningConditions = [
-            [0, 1, 2],
-            [3, 4, 5],
-            [6, 7, 8],
-            [0, 3, 6],
-            [1, 4, 7],
-            [2, 5, 8],
-            [0, 4, 8],
-            [2, 4, 6]
-        ];
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div class="glow-subtitle">Featured Builds</div>
+            <h2>End-to-end delivery from discovery to scale</h2>
+            <p>Here are representative engagements showcasing product strategy, engineering depth, and operational rigor.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-tile">
+              <div class="project-meta">
+                <span>NeoCommerce Intelligence</span>
+                <span><i class="far fa-calendar"></i> 2024</span>
+              </div>
+              <p>Retail analytics dashboard integrating third-party logistics data with customer segmentation. Achieved a 17% increase in conversion via real-time insights.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">GraphQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" data-bs-toggle="tooltip" title="Product overview"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                <a href="#" data-bs-toggle="tooltip" title="Architecture"><i class="fas fa-diagram-project"></i></a>
+              </div>
+            </article>
+            <article class="project-tile">
+              <div class="project-meta">
+                <span>OpsSync Collaboration</span>
+                <span><i class="far fa-calendar"></i> 2023</span>
+              </div>
+              <p>A realtime task management hub with WebSockets, granular audit trails, and automated SLA tracking for distributed teams.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">Vue.js</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">Socket.io</span>
+              </div>
+              <div class="project-links">
+                <a href="#" data-bs-toggle="tooltip" title="Live demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                <a href="#" data-bs-toggle="tooltip" title="Source"><i class="fab fa-github"></i></a>
+              </div>
+            </article>
+            <article class="project-tile">
+              <div class="project-meta">
+                <span>Insightful Portfolio</span>
+                <span><i class="far fa-calendar"></i> 2022</span>
+              </div>
+              <p>A modular personal branding site showcasing component libraries, motion design, and accessible layouts for multi-device browsing.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" data-bs-toggle="tooltip" title="View site"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                <a href="#" data-bs-toggle="tooltip" title="Source"><i class="fab fa-github"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        function handleCellPlayed(clickedCell, clickedCellIndex) {
-            gameState[clickedCellIndex] = currentPlayer;
-            clickedCell.innerHTML = currentPlayer;
-        }
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div class="glow-subtitle">Interactive Prototypes</div>
+            <h2>Hands-on labs to showcase experimentation</h2>
+            <p>Games and mini-apps reveal my approach to state management, responsive design, and algorithmic thinking.</p>
+          </div>
+          <div class="game-wrapper">
+            <div class="glass-card">
+              <h3 class="mb-3">3x3 Tic Tac Toe</h3>
+              <p class="text-muted">Unbeatable AI powered by minimax scoring.</p>
+              <div id="gameStatus" class="mb-2"></div>
+              <div id="winCounter">X Wins: 0 | O Wins: 0</div>
+              <div id="ticTacToeBoard" class="tic-tac-toe mt-3">
+                <button type="button" aria-label="cell 1"></button>
+                <button type="button" aria-label="cell 2"></button>
+                <button type="button" aria-label="cell 3"></button>
+                <button type="button" aria-label="cell 4"></button>
+                <button type="button" aria-label="cell 5"></button>
+                <button type="button" aria-label="cell 6"></button>
+                <button type="button" aria-label="cell 7"></button>
+                <button type="button" aria-label="cell 8"></button>
+                <button type="button" aria-label="cell 9"></button>
+              </div>
+              <button id="playAgain" class="btn btn-primary mt-3">Play Again</button>
+            </div>
 
-        function handlePlayerChange() {
-            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-        }
+            <div class="glass-card">
+              <h3 class="mb-3">6x6 Tic Tac Toe</h3>
+              <p class="text-muted">Heuristic evaluation simulates human-like play across a larger board.</p>
+              <div id="gameStatus6x6">Current Turn: X</div>
+              <div id="ticTacToeBoard6x6" class="tic-tac-toe-6x6 mt-3">
+                <button type="button" aria-label="cell 1"></button>
+                <button type="button" aria-label="cell 2"></button>
+                <button type="button" aria-label="cell 3"></button>
+                <button type="button" aria-label="cell 4"></button>
+                <button type="button" aria-label="cell 5"></button>
+                <button type="button" aria-label="cell 6"></button>
+                <button type="button" aria-label="cell 7"></button>
+                <button type="button" aria-label="cell 8"></button>
+                <button type="button" aria-label="cell 9"></button>
+                <button type="button" aria-label="cell 10"></button>
+                <button type="button" aria-label="cell 11"></button>
+                <button type="button" aria-label="cell 12"></button>
+                <button type="button" aria-label="cell 13"></button>
+                <button type="button" aria-label="cell 14"></button>
+                <button type="button" aria-label="cell 15"></button>
+                <button type="button" aria-label="cell 16"></button>
+                <button type="button" aria-label="cell 17"></button>
+                <button type="button" aria-label="cell 18"></button>
+                <button type="button" aria-label="cell 19"></button>
+                <button type="button" aria-label="cell 20"></button>
+                <button type="button" aria-label="cell 21"></button>
+                <button type="button" aria-label="cell 22"></button>
+                <button type="button" aria-label="cell 23"></button>
+                <button type="button" aria-label="cell 24"></button>
+                <button type="button" aria-label="cell 25"></button>
+                <button type="button" aria-label="cell 26"></button>
+                <button type="button" aria-label="cell 27"></button>
+                <button type="button" aria-label="cell 28"></button>
+                <button type="button" aria-label="cell 29"></button>
+                <button type="button" aria-label="cell 30"></button>
+                <button type="button" aria-label="cell 31"></button>
+                <button type="button" aria-label="cell 32"></button>
+                <button type="button" aria-label="cell 33"></button>
+                <button type="button" aria-label="cell 34"></button>
+                <button type="button" aria-label="cell 35"></button>
+                <button type="button" aria-label="cell 36"></button>
+              </div>
+              <button id="playAgain6x6" class="btn btn-primary mt-3">Play Again</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        function handleResultValidation() {
-            let roundWon = false;
-            for (let i = 0; i < winningConditions.length; i++) {
-                const winCondition = winningConditions[i];
-                let a = gameState[winCondition[0]];
-                let b = gameState[winCondition[1]];
-                let c = gameState[winCondition[2]];
-                if (a === '' || b === '' || c === '') {
-                    continue;
-                }
-                if (a === b && b === c) {
-                    roundWon = true;
-                    break;
-                }
-            }
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Portfolio</div>
+          <p class="footer-text">Delivering transparent roadmaps, fast iterations, and secure releases.</p>
+          <div class="footer-links">
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="services.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="social-links">
+            <a href="#" data-bs-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" data-bs-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" data-bs-toggle="tooltip" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" data-bs-toggle="tooltip" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" data-bs-toggle="tooltip" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+          </div>
+          <div class="copyright">&copy; <span id="current-year"></span> Your Name. All Rights Reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-            if (roundWon) {
-                statusDisplay.innerHTML = `Player ${currentPlayer} has won!`;
-                gameActive = false;
-                updateWinCounter();
-                return;
-            }
+  <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-            let roundDraw = !gameState.includes('');
-            if (roundDraw) {
-                statusDisplay.innerHTML = 'Game ended in a draw!';
-                gameActive = false;
-                return;
-            }
-
-            handlePlayerChange();
-        }
-
-        function handleCellClick(clickedCellEvent) {
-            const clickedCell = clickedCellEvent.target;
-            const clickedCellIndex = Array.from(board.children).indexOf(clickedCell);
-
-            if (gameState[clickedCellIndex] !== '' || !gameActive) {
-                return;
-            }
-
-            handleCellPlayed(clickedCell, clickedCellIndex);
-            handleResultValidation();
-
-            if (gameActive && currentPlayer === 'O') {
-                handleComputerMove();
-            }
-        }
-
-        function handleComputerMove() {
-            const bestMove = getBestMove();
-            const computerCell = board.children[bestMove];
-
-            handleCellPlayed(computerCell, bestMove);
-            handleResultValidation();
-        }
-
-        function getBestMove() {
-            let bestScore = -Infinity;
-            let move;
-            for (let i = 0; i < gameState.length; i++) {
-                if (gameState[i] === '') {
-                    gameState[i] = 'O';
-                    let score = minimax(gameState, 0, false);
-                    gameState[i] = '';
-                    if (score > bestScore) {
-                        bestScore = score;
-                        move = i;
-                    }
-                }
-            }
-            return move;
-        }
-
-        function minimax(newGameState, depth, isMaximizing) {
-            let scores = { X: -1, O: 1, tie: 0 };
-            let result = checkWinner();
-            if (result !== null) {
-                return scores[result];
-            }
-
-            if (isMaximizing) {
-                let bestScore = -Infinity;
-                for (let i = 0; i < newGameState.length; i++) {
-                    if (newGameState[i] === '') {
-                        newGameState[i] = 'O';
-                        let score = minimax(newGameState, depth + 1, false);
-                        newGameState[i] = '';
-                        bestScore = Math.max(score, bestScore);
-                    }
-                }
-                return bestScore;
-            } else {
-                let bestScore = Infinity;
-                for (let i = 0; i < newGameState.length; i++) {
-                    if (newGameState[i] === '') {
-                        newGameState[i] = 'X';
-                        let score = minimax(newGameState, depth + 1, true);
-                        newGameState[i] = '';
-                        bestScore = Math.min(score, bestScore);
-                    }
-                }
-                return bestScore;
-            }
-        }
-
-        function checkWinner() {
-            for (let i = 0; i < winningConditions.length; i++) {
-                const [a, b, c] = winningConditions[i];
-                if (gameState[a] && gameState[a] === gameState[b] && gameState[a] === gameState[c]) {
-                    return gameState[a];
-                }
-            }
-            return gameState.includes('') ? null : 'tie';
-        }
-
-        function updateWinCounter() {
-            if (currentPlayer === 'X') {
-                xWins++;
-            } else {
-                oWins++;
-            }
-            winCounterDisplay.innerHTML = `X Wins: ${xWins} | O Wins: ${oWins}`;
-        }
-
-        function handleRestartGame() {
-            gameActive = true;
-            currentPlayer = 'X';
-            gameState.fill('');
-            statusDisplay.innerHTML = '';
-            Array.from(board.children).forEach(cell => cell.innerHTML = '');
-        }
-
-        board.addEventListener('click', handleCellClick);
-        playAgainButton.addEventListener('click', handleRestartGame);
-
-        // JavaScript for 6x6 Tic Tac Toe
-        const board6x6 = document.getElementById('ticTacToeBoard6x6');
-        const statusDisplay6x6 = document.getElementById('gameStatus6x6');
-        const playAgainButton6x6 = document.getElementById('playAgain6x6');
-        let currentPlayer6x6 = 'X';
-        let gameActive6x6 = true;
-        const gameState6x6 = Array(36).fill('');
-
-        const winningConditions6x6 = [
-            // Horizontal
-            ...Array(6).fill().map((_, r) => Array(3).fill().map((_, c) => [r * 6 + c, r * 6 + c + 1, r * 6 + c + 2, r * 6 + c + 3])),
-            // Vertical
-            ...Array(6).fill().map((_, c) => Array(3).fill().map((_, r) => [r * 6 + c, (r + 1) * 6 + c, (r + 2) * 6 + c, (r + 3) * 6 + c])),
-            // Diagonal (top-left to bottom-right)
-            ...Array(3).fill().map((_, r) => Array(3).fill().map((_, c) => [r * 6 + c, (r + 1) * 6 + c + 1, (r + 2) * 6 + c + 2, (r + 3) * 6 + c + 3])),
-            // Diagonal (top-right to bottom-left)
-            ...Array(3).fill().map((_, r) => Array(3).fill().map((_, c) => [r * 6 + c + 3, (r + 1) * 6 + c + 2, (r + 2) * 6 + c + 1, (r + 3) * 6 + c])),
-        ].flat();
-
-        function handleCellPlayed6x6(clickedCell, clickedCellIndex) {
-            gameState6x6[clickedCellIndex] = currentPlayer6x6;
-            clickedCell.innerHTML = currentPlayer6x6;
-        }
-
-        function handlePlayerChange6x6() {
-            currentPlayer6x6 = currentPlayer6x6 === 'X' ? 'O' : 'X';
-            statusDisplay6x6.innerHTML = `Current Turn: ${currentPlayer6x6}`;
-        }
-
-        function handleResultValidation6x6() {
-            let roundWon = false;
-            for (let i = 0; i < winningConditions6x6.length; i++) {
-                const winCondition = winningConditions6x6[i];
-                let a = gameState6x6[winCondition[0]];
-                let b = gameState6x6[winCondition[1]];
-                let c = gameState6x6[winCondition[2]];
-                let d = gameState6x6[winCondition[3]];
-                if (a === '' || b === '' || c === '' || d === '') {
-                    continue;
-                }
-                if (a === b && b === c && c === d) {
-                    roundWon = true;
-                    break;
-                }
-            }
-
-            if (roundWon) {
-                statusDisplay6x6.innerHTML = `Player ${currentPlayer6x6} has won!`;
-                gameActive6x6 = false;
-                return;
-            }
-
-            let roundDraw = !gameState6x6.includes('');
-            if (roundDraw) {
-                statusDisplay6x6.innerHTML = 'Game ended in a draw!';
-                gameActive6x6 = false;
-                return;
-            }
-
-            handlePlayerChange6x6();
-        }
-
-        function handleCellClick6x6(clickedCellEvent) {
-            const clickedCell = clickedCellEvent.target;
-            const clickedCellIndex = Array.from(board6x6.children).indexOf(clickedCell);
-
-            if (gameState6x6[clickedCellIndex] !== '' || !gameActive6x6) {
-                return;
-            }
-
-            handleCellPlayed6x6(clickedCell, clickedCellIndex);
-            handleResultValidation6x6();
-
-            if (gameActive6x6 && currentPlayer6x6 === 'O') {
-                handleComputerMove6x6();
-            }
-        }
-
-        function handleComputerMove6x6() {
-            const bestMove = getBestMove6x6();
-            const computerCell = board6x6.children[bestMove];
-
-            handleCellPlayed6x6(computerCell, bestMove);
-            handleResultValidation6x6();
-        }
-
-        function heuristicEvaluation6x6(state) {
-            let score = 0;
-            for (let condition of winningConditions6x6) {
-                let oCount = 0;
-                let xCount = 0;
-                for (let index of condition) {
-                    if (state[index] === 'O') oCount++;
-                    if (state[index] === 'X') xCount++;
-                }
-                if (oCount > 0 && xCount === 0) {
-                    score += Math.pow(10, oCount); // Increase the weight for 'O'
-                }
-                if (xCount > 0 && oCount === 0) {
-                    score -= Math.pow(10, xCount + 1); // Increase the penalty for 'X'
-                }
-            }
-            return score;
-        }
-
-        function getBestMove6x6() {
-            let bestScore = -Infinity;
-            let move;
-            for (let i = 0; i < gameState6x6.length; i++) {
-                if (gameState6x6[i] === '') {
-                    gameState6x6[i] = 'O';
-                    let score = heuristicEvaluation6x6(gameState6x6);
-                    gameState6x6[i] = '';
-                    if (score > bestScore) {
-                        bestScore = score;
-                        move = i;
-                    }
-                }
-            }
-            return move;
-        }
-
-        function handleRestartGame6x6() {
-            gameActive6x6 = true;
-            currentPlayer6x6 = 'X';
-            gameState6x6.fill('');
-            statusDisplay6x6.innerHTML = 'Current Turn: X';
-            Array.from(board6x6.children).forEach(cell => cell.innerHTML = '');
-        }
-        board6x6.addEventListener('click', handleCellClick6x6);
-        playAgainButton6x6.addEventListener('click', handleRestartGame6x6);
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tic-tac-toe.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var yearEl = document.getElementById('current-year');
+      if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+    });
+  </script>
 </body>
 </html>
