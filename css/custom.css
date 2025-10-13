@@ -2269,4 +2269,7 @@ body.app-theme {
     flex-direction: column;
     gap: 0.75rem;
   }
+  .app-theme .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
