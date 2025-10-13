@@ -863,6 +863,10 @@ textarea.form-control {
     max-width: 350px;
     margin: 0 auto 2rem;
   }
+  
+  .app-theme .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Custom Scrollbar */
